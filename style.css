@@ -303,4 +303,56 @@ html, body {
   overflow-x: hidden;
 }
 
+/* --- Custom Animations for Dynamic Feel --- */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animated-fadeInUp {
+  animation: fadeInUp 0.9s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.animated-fadeInLeft {
+  animation: fadeInLeft 0.9s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.animated-fadeInRight {
+  animation: fadeInRight 0.9s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+/* Delay for staggered effect */
+[data-anim-delay="1"] { animation-delay: 0.2s; }
+[data-anim-delay="2"] { animation-delay: 0.4s; }
+[data-anim-delay="3"] { animation-delay: 0.6s; }
+[data-anim-delay="4"] { animation-delay: 0.8s; }
+[data-anim-delay="5"] { animation-delay: 1s; }
+
 /* --- End Modern Minimal Styles --- */
