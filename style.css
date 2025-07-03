@@ -93,7 +93,7 @@ footer {
 [data-aos].aos-animate { opacity: 1; }
 
 /* Dark Mode Enhancements */
-body[data-bs-theme="dark"] {
+/* body[data-bs-theme="dark"] {
   background: #181a1b;
   color: #f8f9fa;
 }
@@ -111,15 +111,117 @@ body[data-bs-theme="dark"] .contact-card {
 body[data-bs-theme="dark"] .navbar, body[data-bs-theme="dark"] footer {
   background: #181a1b !important;
   color: #f8f9fa;
+  border-color: #23272b !important;
+}
+body[data-bs-theme="dark"] .btn-primary, body[data-bs-theme="dark"] .btn-outline-primary {
+  background: #4ea8ff;
+  color: #181a1b;
+  border-color: #4ea8ff;
+}
+body[data-bs-theme="dark"] .btn-primary:hover, body[data-bs-theme="dark"] .btn-outline-primary:hover {
+  background: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+body[data-bs-theme="dark"] .btn-outline-dark {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+body[data-bs-theme="dark"] .btn-outline-dark:hover {
+  background: #f8f9fa;
+  color: #23272b;
 }
 body[data-bs-theme="dark"] .skill-badge {
   background: #23272b;
   color: #f8f9fa;
-  border: 1px solid #414345;
+  border: 1px solid #4ea8ff;
+}
+body[data-bs-theme="dark"] .skill-badge img {
+  filter: brightness(1.5) contrast(1.5) drop-shadow(0 0 2px #000);
+  background: #23272b;
+  border-radius: 50%;
 }
 body[data-bs-theme="dark"] .skill-badge:hover {
-  background: #0d6efd;
-  color: #fff;
+  background: #4ea8ff;
+  color: #181a1b;
+}
+body[data-bs-theme="dark"] .skill-badge:hover img {
+  filter: brightness(2) invert(1) drop-shadow(0 0 2px #fff);
+}
+body[data-bs-theme="dark"] a, body[data-bs-theme="dark"] a:visited {
+  color: #4ea8ff;
+}
+body[data-bs-theme="dark"] .section-title:after {
+  background: #4ea8ff;
+}
+body[data-bs-theme="dark"] .list-group-item, body[data-bs-theme="dark"] .contact-card ul li {
+  background: #23272b !important;
+  color: #f8f9fa !important;
+  border-color: #414345 !important;
+}
+body[data-bs-theme="dark"] .badge.bg-secondary, body[data-bs-theme="dark"] .badge.bg-primary {
+  background: #4ea8ff !important;
+  color: #181a1b !important;
+}
+body[data-bs-theme="dark"] .project-card .badge {
+  border: 1px solid #23272b;
+} */
+
+/* --- Force Text Visibility in Dark Mode --- */
+/* body[data-bs-theme="dark"],
+body[data-bs-theme="dark"] h1,
+body[data-bs-theme="dark"] h2,
+body[data-bs-theme="dark"] h3,
+body[data-bs-theme="dark"] h4,
+body[data-bs-theme="dark"] h5,
+body[data-bs-theme="dark"] h6,
+body[data-bs-theme="dark"] p,
+body[data-bs-theme="dark"] .lead,
+body[data-bs-theme="dark"] .section-title,
+body[data-bs-theme="dark"] .card-title,
+body[data-bs-theme="dark"] .card-subtitle,
+body[data-bs-theme="dark"] .card-text,
+body[data-bs-theme="dark"] .about-card,
+body[data-bs-theme="dark"] .project-card,
+body[data-bs-theme="dark"] .exp-card,
+body[data-bs-theme="dark"] .edu-card,
+body[data-bs-theme="dark"] .contact-card,
+body[data-bs-theme="dark"] .list-group-item,
+body[data-bs-theme="dark"] .contact-card ul li,
+body[data-bs-theme="dark"] .navbar,
+body[data-bs-theme="dark"] footer {
+  color: #f8f9fa !important;
+  text-shadow: 0 1px 2px #0008;
+}
+body[data-bs-theme="dark"] a, body[data-bs-theme="dark"] a:visited {
+  color: #4ea8ff !important;
+}
+body[data-bs-theme="dark"] .btn, body[data-bs-theme="dark"] .btn-lg, body[data-bs-theme="dark"] .btn-primary, body[data-bs-theme="dark"] .btn-outline-dark, body[data-bs-theme="dark"] .btn-outline-primary {
+  color: #181a1b !important;
+  font-weight: 600;
+}
+body[data-bs-theme="dark"] .btn-outline-dark {
+  color: #f8f9fa !important;
+}
+body[data-bs-theme="dark"] .btn-outline-dark:hover {
+  color: #23272b !important;
+}
+body[data-bs-theme="dark"] .badge {
+  color: #181a1b !important;
+}
+body[data-bs-theme="dark"] .skill-badge {
+  color: #f8f9fa !important;
+}
+body[data-bs-theme="dark"] .skill-badge:hover {
+  color: #181a1b !important;
+}
+/* --- End Force Text Visibility --- */
+
+/* Ensure all text and icons are visible in both modes */
+.skill-badge img {
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 /* --- Ultra-Responsive, All-Resolution Support --- */
